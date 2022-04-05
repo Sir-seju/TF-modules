@@ -1,0 +1,11 @@
+## Space for Terraform Modules
+
+#Usage
+
+##In your terraform configuration file, define a module block that sources this repository
+
+module "module_name" {
+	source = "github.com/sir-seju/TF-modules.git//vpc?ref=v1.0.0"
+	...
+}
+

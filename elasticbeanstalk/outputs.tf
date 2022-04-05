@@ -1,0 +1,54 @@
+output "id" {
+  description = "ID of the Elastic Beanstalk environment"
+  value       = aws_elastic_beanstalk_environment.default.id
+}
+
+output "name" {
+  value       = aws_elastic_beanstalk_environment.default.name
+  description = "Name"
+}
+
+output "tier" {
+  description = "The environment tier"
+  value       = aws_elastic_beanstalk_environment.default.tier
+}
+
+output "application" {
+  description = "The Elastic Beanstalk Application specified for this environment"
+  value       = aws_elastic_beanstalk_environment.default.application
+}
+
+output "setting" {
+  description = "Settings specifically set for this environment"
+  value       = aws_elastic_beanstalk_environment.default.setting
+}
+
+output "all_settings" {
+  description = "List of all option settings configured in the environment. These are a combination of default settings and their overrides from setting in the configuration"
+  value       = aws_elastic_beanstalk_environment.default.all_settings
+}
+
+output "endpoint" {
+  description = "Fully qualified DNS name for the environment"
+  value       = aws_elastic_beanstalk_environment.default.cname
+}
+
+output "autoscaling_groups" {
+  description = "The autoscaling groups used by this environment"
+  value       = aws_elastic_beanstalk_environment.default.autoscaling_groups
+}
+
+output "instances" {
+  description = "Instances used by this environment"
+  value       = aws_elastic_beanstalk_environment.default.instances
+}
+
+output "launch_configurations" {
+  description = "Launch configurations in use by this environment"
+  value       = aws_elastic_beanstalk_environment.default.launch_configurations
+}
+
+output "load_balancers" {
+  description = "Elastic Load Balancers in use by this environment"
+  value       = aws_elastic_beanstalk_environment.default.load_balancers
+}
