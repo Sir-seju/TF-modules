@@ -1,5 +1,31 @@
 # Terraform
-.terraform
+.terraform/
 *.tfstate
-*.tfstate.backup
+*.tfstate.*
+*.tfplan
 .terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Secrets
+*.tfvars.secret
+*.auto.tfvars
+!inputs/**/*.tfvars
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+
+# Test
+.tflint.d/
